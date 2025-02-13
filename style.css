@@ -1,0 +1,97 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+body {
+    background-color: #ffccdc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    flex-direction: column;
+}
+.retro-text {
+    position: absolute;
+    top: 10%;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 26px;
+    color: #ff0080;
+    text-shadow: 0 0 5px #ff0080, 0 0 10px #ff0080, 0 0 20px #ff0080;
+    animation: glow 1.5s infinite alternate;
+
+}
+@keyframes glow {
+    0% { text-shadow: 0 0 5px #ff0080, 0 0 10px #ff0080, 0 0 20px #ff0080; }
+    100% { text-shadow: 0 0 10px #ff0080, 0 0 20px #ff0080, 0 0 40px #ff0080; }
+}
+.heart {
+    position: absolute;
+    top: 20%;
+    font-size: 50px;
+    color: #ff3366;
+    animation: pulse 1s infinite alternate;
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.2); }
+}
+
+
+.hide {
+    display: none;
+  }
+  
+  
+  
+  .container {
+    flex: 1;
+    /* isolation: isolate; */
+    position: absolute;
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+  }
+  
+  /* .image-1,
+  .image-2, .image-3 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } */
+  
+  .image-1, .image-2, .image-3, .image-4, .image-5, .image-6, .image-7, .image-8{
+    width: 175px;
+  }
+  
+  
+  .btn {
+    position: absolute;
+    top: calc(90% - 5rem);
+    min-width: 120px;
+    padding: 0.75rem 1rem;
+    font-size: 1.25rem;
+    outline: none;
+    border: none;
+    background-color: #f8fafc;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #e2e8f0;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn-yes {
+    left: 50%;
+    transform: translateX(calc(-100% - 1rem));
+    z-index: 1;
+  }
+  
+  .btn-no {
+    left: calc(50% + 1rem);
+    transition: all 0.5s ease;
+    z-index: 2;
+  }
