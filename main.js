@@ -11,6 +11,9 @@ const imageEight = document.querySelector(".image-8");
 const btnYes = document.querySelector(".btn-yes");
 const btnNo = document.querySelector(".btn-no");
 
+const retro_text = document.querySelector(".retro-text");
+
+
 function getRandomNumber(min, max) {
   // Calculate the random number between min and max (inclusive)
   const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
@@ -41,6 +44,7 @@ btnNo.addEventListener("mouseover", (event) => {
 });
 
 btnYes.addEventListener("click", (e) => {
+  retro_text.textContent = "YAAAYYYYY!!!!!";
   btnNo.classList.add("hide");
   imageOne.classList.add("hide");
   imageThree.classList.add("hide");
